@@ -6,8 +6,8 @@ from azure.cognitiveservices.vision.computervision import ComputerVisionClient
 from msrest.authentication import CognitiveServicesCredentials
 
 # Azure credentials
-SUBSCRIPTION_KEY = <<Replace with your subscription key>>
-ENDPOINT = None #'https://<<Replace with your endpoint>>.cognitiveservices.azure.com/'
+SUBSCRIPTION_KEY = "<<Replace with your subscription key>>"
+ENDPOINT = "https://<<Replace with your endpoint>>.cognitiveservices.azure.com/"
 
 # Initiate client
 computervision_client = ComputerVisionClient(ENDPOINT, CognitiveServicesCredentials(SUBSCRIPTION_KEY))
@@ -99,5 +99,6 @@ while True:
     # and q key will quit
     if key == ord('q'):
         break
-cv2.destroyAllWindows()
+        
 # When everything done, release the capture
+cv2.destroyAllWindows()
