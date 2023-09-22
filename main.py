@@ -7,7 +7,7 @@ from msrest.authentication import CognitiveServicesCredentials
 
 # Azure credentials
 SUBSCRIPTION_KEY = <<Replace with your subscription key>>
-ENDPOINT = 'https://<<Replace with your endpoint>>.cognitiveservices.azure.com/'
+ENDPOINT = None #'https://<<Replace with your endpoint>>.cognitiveservices.azure.com/'
 
 # Initiate client
 computervision_client = ComputerVisionClient(ENDPOINT, CognitiveServicesCredentials(SUBSCRIPTION_KEY))
