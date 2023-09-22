@@ -19,7 +19,7 @@ remote_image_features = ["faces"]
 analyze_url = ENDPOINT + "vision/v2.1/analyze"
 
 # image path
-image_path = <<replace with your image path>>
+image_path = "<<replace with your image path>>"
 
 # capture video using built in camera
 video = cv2.VideoCapture(0)
